@@ -15,6 +15,8 @@ public class Principal {
         float numero2 = 0;
         float resultado;
         
+        
+        // Prueba de subida
         //AnalizadorSintactico.main(archivoPrueba);
                     System.out.println("Ejecutado!");
         resultado = calculadora.operar("/", numero1, numero2);
