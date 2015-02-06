@@ -10,18 +10,30 @@ import Controlador.Calculadora;
 public class Principal {
     
     public static void main(String[] args) {
+        // Objeto que contiene la lógica de la Calculadora en el paquete Controlador
         Calculadora calculadora = new Calculadora();
-        float numero1 = 999999999;
-        float numero2 = 0;
+        
+        //Inicialmente los números van quemados para realizar pruebas 
+        float numero1 = 100;
+        float numero2 = 20;
         float resultado;
         
+        //TODO: Se está trabajando en el Analizador sintáctico
+        //AnalizadorSintactico.main(args);
         
-        // Prueba de subida
-        //AnalizadorSintactico.main(archivoPrueba);
-                    System.out.println("Ejecutado!");
+        //Pruebas funcionales de los métodos
+        resultado = calculadora.operar("+", numero1, numero2);
+        System.out.println("La suma es: " + resultado);
+        
+        resultado = calculadora.operar("-", numero1, numero2);
+        System.out.println("La resta es: " + resultado);
+        
+        resultado = calculadora.operar("*", numero1, numero2);
+        System.out.println("La multiplicación es: " + resultado);
+        
         resultado = calculadora.operar("/", numero1, numero2);
+        System.out.println("La división es: " + resultado);
         
-        System.out.println("El resultado es: " + resultado);
     }
     
 }
