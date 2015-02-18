@@ -4,7 +4,7 @@ package Controlador;
  *
  * @author Nestor Moreno - Daniel Sánchez
  */
-public class Resta implements Operacion{
+public class Resta implements OperacionBinaria{
     
     @Override
     public float operar(float numero1, float numero2) {

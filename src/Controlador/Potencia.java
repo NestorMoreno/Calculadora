@@ -7,14 +7,13 @@ package Controlador;
 
 /**
  *
- * @author E200
+ * @author Nestorm
  */
-public class Suma implements OperacionBinaria {
+public class Potencia implements OperacionBinaria {
 
     @Override
-    public float operar(float numero1, float numero2)throws ArithmeticException{
-        float res = (numero1 + numero2);
-        return res;
+    public float operar(float numero1, float numero2) {
+        return (float) Math.pow(numero1, numero2);
     }
     
 }

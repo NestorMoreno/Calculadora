@@ -4,7 +4,7 @@ package Controlador;
  *
  * @author Nestor Moreno - Daniel Sánchez
  */
-public class Division implements Operacion{
+public class Division implements OperacionBinaria{
 
     @Override
     public float operar(float numero1, float numero2) {

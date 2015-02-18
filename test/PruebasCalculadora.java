@@ -1,4 +1,4 @@
-import Controlador.Operacion;
+import Controlador.OperacionBinaria;
 import Controlador.Suma;
 import Controlador.Resta;
 import Controlador.Multiplicacion;
@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
  */
 public class PruebasCalculadora {
     
-    Operacion operacion;
+    OperacionBinaria operacion;
             
     public PruebasCalculadora() {
     }
